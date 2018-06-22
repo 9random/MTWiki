@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7E880C720DD24CC00A0120B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E880C620DD24CC00A0120B /* AppDelegate.swift */; };
+		B7E880C920DD24CC00A0120B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E880C820DD24CC00A0120B /* ViewController.swift */; };
+		B7E880CC20DD24CC00A0120B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E880CA20DD24CC00A0120B /* Main.storyboard */; };
+		B7E880CF20DD24CC00A0120B /* MTWiki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7E880CD20DD24CC00A0120B /* MTWiki.xcdatamodeld */; };
+		B7E880D120DD24E800A0120B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E880D020DD24E800A0120B /* Assets.xcassets */; };
+		B7E880D420DD24E800A0120B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E880D220DD24E800A0120B /* LaunchScreen.storyboard */; };
+		B7E880DF20DD24E900A0120B /* MTWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E880DE20DD24E900A0120B /* MTWikiTests.swift */; };
+		B7E880EA20DD24EA00A0120B /* MTWikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E880E920DD24EA00A0120B /* MTWikiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7E880DB20DD24E900A0120B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7E880BB20DD24CA00A0120B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7E880C220DD24CB00A0120B;
+			remoteInfo = MTWiki;
+		};
+		B7E880E620DD24EA00A0120B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7E880BB20DD24CA00A0120B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7E880C220DD24CB00A0120B;
+			remoteInfo = MTWiki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7E880C320DD24CB00A0120B /* MTWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E880C620DD24CC00A0120B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7E880C820DD24CC00A0120B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7E880CB20DD24CC00A0120B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7E880CE20DD24CC00A0120B /* MTWiki.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTWiki.xcdatamodel; sourceTree = "<group>"; };
+		B7E880D020DD24E800A0120B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7E880D320DD24E800A0120B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7E880D520DD24E800A0120B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E880DA20DD24E900A0120B /* MTWikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTWikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E880DE20DD24E900A0120B /* MTWikiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTWikiTests.swift; sourceTree = "<group>"; };
+		B7E880E020DD24EA00A0120B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E880E520DD24EA00A0120B /* MTWikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTWikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E880E920DD24EA00A0120B /* MTWikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTWikiUITests.swift; sourceTree = "<group>"; };
+		B7E880EB20DD24EA00A0120B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7E880C020DD24CB00A0120B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E880D720DD24E900A0120B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E880E220DD24EA00A0120B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7E880BA20DD24CA00A0120B = {
+			isa = PBXGroup;
+			children = (
+				B7E880C520DD24CB00A0120B /* MTWiki */,
+				B7E880DD20DD24E900A0120B /* MTWikiTests */,
+				B7E880E820DD24EA00A0120B /* MTWikiUITests */,
+				B7E880C420DD24CB00A0120B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7E880C420DD24CB00A0120B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7E880C320DD24CB00A0120B /* MTWiki.app */,
+				B7E880DA20DD24E900A0120B /* MTWikiTests.xctest */,
+				B7E880E520DD24EA00A0120B /* MTWikiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7E880C520DD24CB00A0120B /* MTWiki */ = {
+			isa = PBXGroup;
+			children = (
+				B7E880C620DD24CC00A0120B /* AppDelegate.swift */,
+				B7E880C820DD24CC00A0120B /* ViewController.swift */,
+				B7E880CA20DD24CC00A0120B /* Main.storyboard */,
+				B7E880D020DD24E800A0120B /* Assets.xcassets */,
+				B7E880D220DD24E800A0120B /* LaunchScreen.storyboard */,
+				B7E880D520DD24E800A0120B /* Info.plist */,
+				B7E880CD20DD24CC00A0120B /* MTWiki.xcdatamodeld */,
+			);
+			path = MTWiki;
+			sourceTree = "<group>";
+		};
+		B7E880DD20DD24E900A0120B /* MTWikiTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7E880DE20DD24E900A0120B /* MTWikiTests.swift */,
+				B7E880E020DD24EA00A0120B /* Info.plist */,
+			);
+			path = MTWikiTests;
+			sourceTree = "<group>";
+		};
+		B7E880E820DD24EA00A0120B /* MTWikiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7E880E920DD24EA00A0120B /* MTWikiUITests.swift */,
+				B7E880EB20DD24EA00A0120B /* Info.plist */,
+			);
+			path = MTWikiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7E880C220DD24CB00A0120B /* MTWiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E880EE20DD24EA00A0120B /* Build configuration list for PBXNativeTarget "MTWiki" */;
+			buildPhases = (
+				B7E880BF20DD24CB00A0120B /* Sources */,
+				B7E880C020DD24CB00A0120B /* Frameworks */,
+				B7E880C120DD24CB00A0120B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTWiki;
+			productName = MTWiki;
+			productReference = B7E880C320DD24CB00A0120B /* MTWiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7E880D920DD24E900A0120B /* MTWikiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E880F120DD24EA00A0120B /* Build configuration list for PBXNativeTarget "MTWikiTests" */;
+			buildPhases = (
+				B7E880D620DD24E900A0120B /* Sources */,
+				B7E880D720DD24E900A0120B /* Frameworks */,
+				B7E880D820DD24E900A0120B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7E880DC20DD24E900A0120B /* PBXTargetDependency */,
+			);
+			name = MTWikiTests;
+			productName = MTWikiTests;
+			productReference = B7E880DA20DD24E900A0120B /* MTWikiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7E880E420DD24EA00A0120B /* MTWikiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E880F420DD24EA00A0120B /* Build configuration list for PBXNativeTarget "MTWikiUITests" */;
+			buildPhases = (
+				B7E880E120DD24EA00A0120B /* Sources */,
+				B7E880E220DD24EA00A0120B /* Frameworks */,
+				B7E880E320DD24EA00A0120B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7E880E720DD24EA00A0120B /* PBXTargetDependency */,
+			);
+			name = MTWikiUITests;
+			productName = MTWikiUITests;
+			productReference = B7E880E520DD24EA00A0120B /* MTWikiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7E880BB20DD24CA00A0120B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Rahul Sharma";
+				TargetAttributes = {
+					B7E880C220DD24CB00A0120B = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					B7E880D920DD24E900A0120B = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = B7E880C220DD24CB00A0120B;
+					};
+					B7E880E420DD24EA00A0120B = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = B7E880C220DD24CB00A0120B;
+					};
+				};
+			};
+			buildConfigurationList = B7E880BE20DD24CA00A0120B /* Build configuration list for PBXProject "MTWiki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7E880BA20DD24CA00A0120B;
+			productRefGroup = B7E880C420DD24CB00A0120B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7E880C220DD24CB00A0120B /* MTWiki */,
+				B7E880D920DD24E900A0120B /* MTWikiTests */,
+				B7E880E420DD24EA00A0120B /* MTWikiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7E880C120DD24CB00A0120B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E880D420DD24E800A0120B /* LaunchScreen.storyboard in Resources */,
+				B7E880D120DD24E800A0120B /* Assets.xcassets in Resources */,
+				B7E880CC20DD24CC00A0120B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E880D820DD24E900A0120B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E880E320DD24EA00A0120B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7E880BF20DD24CB00A0120B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E880CF20DD24CC00A0120B /* MTWiki.xcdatamodeld in Sources */,
+				B7E880C920DD24CC00A0120B /* ViewController.swift in Sources */,
+				B7E880C720DD24CC00A0120B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E880D620DD24E900A0120B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E880DF20DD24E900A0120B /* MTWikiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E880E120DD24EA00A0120B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E880EA20DD24EA00A0120B /* MTWikiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7E880DC20DD24E900A0120B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7E880C220DD24CB00A0120B /* MTWiki */;
+			targetProxy = B7E880DB20DD24E900A0120B /* PBXContainerItemProxy */;
+		};
+		B7E880E720DD24EA00A0120B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7E880C220DD24CB00A0120B /* MTWiki */;
+			targetProxy = B7E880E620DD24EA00A0120B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7E880CA20DD24CC00A0120B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7E880CB20DD24CC00A0120B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7E880D220DD24E800A0120B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7E880D320DD24E800A0120B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7E880EC20DD24EA00A0120B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7E880ED20DD24EA00A0120B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7E880EF20DD24EA00A0120B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTWiki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MTWiki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7E880F020DD24EA00A0120B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTWiki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MTWiki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7E880F220DD24EA00A0120B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTWikiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MTWikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTWiki.app/MTWiki";
+			};
+			name = Debug;
+		};
+		B7E880F320DD24EA00A0120B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTWikiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MTWikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTWiki.app/MTWiki";
+			};
+			name = Release;
+		};
+		B7E880F520DD24EA00A0120B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTWikiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MTWikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MTWiki;
+			};
+			name = Debug;
+		};
+		B7E880F620DD24EA00A0120B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTWikiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MTWikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MTWiki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7E880BE20DD24CA00A0120B /* Build configuration list for PBXProject "MTWiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E880EC20DD24EA00A0120B /* Debug */,
+				B7E880ED20DD24EA00A0120B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E880EE20DD24EA00A0120B /* Build configuration list for PBXNativeTarget "MTWiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E880EF20DD24EA00A0120B /* Debug */,
+				B7E880F020DD24EA00A0120B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E880F120DD24EA00A0120B /* Build configuration list for PBXNativeTarget "MTWikiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E880F220DD24EA00A0120B /* Debug */,
+				B7E880F320DD24EA00A0120B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E880F420DD24EA00A0120B /* Build configuration list for PBXNativeTarget "MTWikiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E880F520DD24EA00A0120B /* Debug */,
+				B7E880F620DD24EA00A0120B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B7E880CD20DD24CC00A0120B /* MTWiki.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B7E880CE20DD24CC00A0120B /* MTWiki.xcdatamodel */,
+			);
+			currentVersion = B7E880CE20DD24CC00A0120B /* MTWiki.xcdatamodel */;
+			path = MTWiki.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B7E880BB20DD24CA00A0120B /* Project object */;
+}
