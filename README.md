@@ -1,5 +1,5 @@
 # MTWiki
 
-Offline Support
-History
-Search Results as you type
+##Offline Support
+##History
+##Search Results as you type
