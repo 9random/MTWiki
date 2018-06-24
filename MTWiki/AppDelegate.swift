@@ -17,9 +17,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        MagicalRecord.setupCoreDataStack(withStoreNamed: "MTWiki")
+//        let kB = 1024
+//        let MB = 1024 * kB
+//        let GB = 1024 * MB
+//        let isOfflineHandler: (() -> Bool) = {
+//
+//            if ([[Reachability reachabilityForInternetConnection]currentReachabilityStatus]==NotReachable)
+//            {
+//                //connection unavailable
+//            }
+//            else
+//            {
+//                //connection available
+//            }
+//
+//
+//            /*
+//             We are returning true here for demo purposes only.
+//             You should use Reachability or another method for determining whether the user is
+//             offline and return the appropriate value
+//             */
+//            return true
+//        }
+//        let urlCache = Mattress.URLCache(memoryCapacity: 20 * MB, diskCapacity: 20 * MB, diskPath: nil,
+//                                         mattressDiskCapacity: 1 * GB, mattressDiskPath: nil, mattressSearchPathDirectory: .DocumentDirectory,
+//                                         isOfflineHandler: isOfflineHandler)
+//
+//        NSURLCache.setSharedURLCache(urlCache)
         return true
-    }
 
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -41,11 +69,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
+        if #available(iOS 10.0, *) {
+            self.saveContext()
+        } else {
+            // Fallback on earlier versions
+        }
     }
 
     // MARK: - Core Data stack
 
+    @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -75,6 +108,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data Saving support
 
+    @available(iOS 10.0, *)
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
