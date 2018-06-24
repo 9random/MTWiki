@@ -31,6 +31,7 @@ class PageCell: UITableViewCell {
                 self.pageImage.sd_setImage(with:  URL.init(string: (mHistory?.thumbnailSource)!), placeholderImage: UIImage(named: "WikipediaLogo"))
 
             }else{
+                
                 self.pageImage.image = UIImage(named: "WikipediaLogo")
             }
 
