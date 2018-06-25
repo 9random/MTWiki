@@ -22,12 +22,6 @@ class PageListViewController: UIViewController, UITableViewDelegate, UITableView
     var pageListResults : Array<Page>? = nil
     var historyPageListResults : Array<History>? = nil
 
-//    var internalRoles:Array<InternalRole>?
-
-//    var internalContacts:Dictionary<String, Array<Page>>?
-//    var internalContactsToBeRemoved:Array<InternalContact>?
-//    var selectedContacts:Array<InternalContact>!
-//    var internalSectionArray:Array<String>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,20 +36,6 @@ class PageListViewController: UIViewController, UITableViewDelegate, UITableView
         self.automaticallyAdjustsScrollViewInsets = false;
         self.historyPageListResults = MTWrapper.sharedInstance.fetchHistoryResults()
 //
-//        let allContacts = MoxtraWrapper.sharedInstance.fetchInternalContacts()
-//        if allContacts != nil  {
-//            if self.internalContactsToBeRemoved != nil && self.internalContactsToBeRemoved!.count>0{
-//                let filteredContacts = Set(allContacts!).subtracting(self.internalContactsToBeRemoved!).sorted{($0.firstName!+($0.lastName ?? ""))<($1.firstName!+($1.lastName ?? ""))}
-//                internalContacts = MoxtraWrapper.sharedInstance.fetchArrangedInternalContact(internalContacts: filteredContacts)
-//            }else{
-//                internalContacts = MoxtraWrapper.sharedInstance.fetchArrangedInternalContact(internalContacts: allContacts)
-//            }
-//        }
-//        if internalContacts != nil{
-//            internalSectionArray = internalContacts!.keys.sorted()
-//        }
-//        self.selectedContacts = [InternalContact]()
-//        internalRoles = MoxtraWrapper.sharedInstance.fetchInternalRoles()
     }
     
     func handleUI(){
@@ -64,16 +44,6 @@ class PageListViewController: UIViewController, UITableViewDelegate, UITableView
        // self.cancelButton.tintColor = UIColor.secondaryColor()
        // self.statusView.backgroundColor = UIColor.primaryColor()
 //        
-//        let size = CGSize(width:30, height:30)
-//        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale);
-//        UIBezierPath.init(roundedRect: CGRect(origin:CGPoint(x:0,y:0),size:size), cornerRadius: 5.0).addClip()
-//        UIColor.primaryColor().setFill()
-//        UIRectFill(CGRect(origin:CGPoint(x:0,y:0),size:size));
-//        let image:UIImage = UIGraphicsGetImageFromCurrentImageContext()!;
-//        UIGraphicsEndImageContext();
-//        self.searchBar.setSearchFieldBackgroundImage(image, for: UIControlState.normal)
-//        self.searchBar.layer.borderWidth=1;
-//        self.searchBar.layer.borderColor=UIColor.white.cgColor
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -125,19 +95,6 @@ class PageListViewController: UIViewController, UITableViewDelegate, UITableView
             alert.popoverPresentationController!.sourceView=searchBar
         }
         
-//        if self.internalRoles != nil {
-//            if self.internalRoles!.count > 0 {
-//                for role in self.internalRoles!{
-//                    alert.addAction(UIAlertAction.init(title: role.roleDisplayName!, style: UIAlertActionStyle.default, handler:{(action) in
-//                        self.internalContacts = MoxtraWrapper.sharedInstance.fetchInternalContactsOf(role: role.roleName)
-//                        if self.internalContacts != nil{
-//                            self.internalSectionArray = self.internalContacts!.keys.sorted()
-//                            self.tableView.reloadData()
-//                        }
-//                    }))
-//                }
-//            }
-//        }
 
         alert.addAction(UIAlertAction.init(title: NSLocalizedString("ALL", comment: "ALL"), style: UIAlertActionStyle.cancel, handler: {(action) in
             
@@ -163,10 +120,7 @@ class PageListViewController: UIViewController, UITableViewDelegate, UITableView
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         print("searchBarCancelButtonClicked")
-//        internalContacts = MoxtraWrapper.sharedInstance.fetchInternalContacts(query: nil)
-//        if internalContacts != nil{
-//            internalSectionArray = internalContacts!.keys.sorted()
-//        }
+//        
         self.tableView.reloadData()
         searchBar.showsCancelButton=false
         searchBar.resignFirstResponder()
@@ -229,9 +183,6 @@ class PageListViewController: UIViewController, UITableViewDelegate, UITableView
             return self.historyPageListResults != nil ?(self.historyPageListResults?.count)!:0
 
         }
-      //  return self.pageListResults != nil ?(self.pageListResults?.count)!:0
-        //return (self.pageListResults?.count)!
-        //return self.internalContacts != nil ? self.internalContacts![internalSectionArray![section]]!.count:0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -335,13 +286,5 @@ class PageListViewController: UIViewController, UITableViewDelegate, UITableView
 
     }
     
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        let cell:InternalContactCell = tableView.cellForRow(at: indexPath) as! InternalContactCell
-//        let contact:InternalContact=self.internalContacts![internalSectionArray![indexPath.section]]![indexPath.row]
-//        if self.selectedContacts.contains(contact){
-//            self.selectedContacts.remove(at: self.selectedContacts.index(of: contact)!)
-//            cell.makeSelected(selected: false)
-//        }
-//    }
 
 }
